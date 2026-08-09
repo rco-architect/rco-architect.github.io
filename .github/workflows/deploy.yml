@@ -7,14 +7,14 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-level: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Build Zola Site
+      - name: Build and Deploy Zola
         uses: shalzz/zola-deploy-action@v0.18.0
         env:
           PAGES_BRANCH: gh-pages
           BUILD_DIR: .
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}   
+          TOKEN: ${{ secrets.GITHUB_TOKEN }} 
