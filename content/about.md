@@ -15,4 +15,4 @@ I specialize in **distributed systems**, **data pipelines**, and **AI models**.
 
 ### Terminal Commands
 * View my projects on [GitHub](https://github.com)
-* Access my [Reading Vault](/library)
+* Access my [Reading Vault](/library)    
