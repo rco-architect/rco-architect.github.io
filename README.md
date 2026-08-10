@@ -1,4 +1,19 @@
 
+
+
+RCO-ARCHITECT.GITHUB.IO
+├── index.html
+├── docs-md/
+├── public/
+└── src/
+    ├── css/
+    │   └── style.css
+    ├── js/
+    └── pages/
+
+
+    
+
 rco-architect.github.io/
 ├── index.html                   # Root entry point
 ├── README.md
