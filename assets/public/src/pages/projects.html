@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Raul Contreras</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+
+  <main>
+    <h1>Technical Projects</h1>
+
+    <!-- Static Placeholders -->
+    <section class="project-card">
+      <h2>Project 1: Smart Tourist Navigation App</h2>
+      <p>Android front-end, Fuzzy Logic, SQLite, PostgreSQL backend.</p>
+    </section>
+
+    <section class="project-card">
+      <h2>Project 2: Matrix Terminal Portfolio</h2>
+      <p>Custom HTML/CSS static terminal website hosted via GitHub Pages.</p>
+    </section>
+
+    <section class="project-card">
+      <h2>Project 3: Cloudflare Edge Sync</h2>
+      <p>Automated deployment pipeline and Cloudflare Worker integration.</p>
+    </section>
+
+    <hr>
+
+    <!-- Markdown Rendered Section -->
+    <h2>Project Documentation (.md)</h2>
+    <div id="markdown-content">Loading extra documentation...</div>
+  </main>
+
+  <script src="../js/app.js"></script>
+  <script>
+    fetch('../../docs-md/project1.md')
+      .then(response => {
+        if (!response.ok) throw new Error('Markdown file not found');
+        return response.text();
+      })
+      .then(text => {
+        document.getElementById('markdown-content').innerHTML = marked.parse(text);
+      })
+      .catch(err => {
+        document.getElementById('markdown-content').innerHTML = '<p>Add Markdown files inside <code>docs-md/</code> to automatically display project documentation here.</p>';
+      });
+  </script>
+</body>
+</html>
