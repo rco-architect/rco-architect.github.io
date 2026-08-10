@@ -32,7 +32,7 @@ You configure this setting directly in your repository's web settings on GitHub:
     
 - **Use `/docs` when:** Your repository contains source code or software (like an open-source library or app) and you want to keep the documentation/website isolated inside a single `docs/` folder without cluttering the root project files.
 
-
+``` 
 Configuration 1: Serving from `/(root)`
 
 rco-architect.github.io/
@@ -86,7 +86,7 @@ rco-architect.github.io/
             ├── about.html
             ├── roadmap.html
             └── projects.html
-
+``` 
 
 
 
@@ -209,9 +209,10 @@ If you want `Prod_Turist` (or similar) as the main subdomain before `.github.io`
         
 
 ### Comparison Summary
-
+``` 
 |**Approach**|**Resulting URL**|**Setup Required**|
 |---|---|---|
 |**New Repo in Current Account**|`[https://rco-architect.github.io/Prod_Turist/](https://rco-architect.github.io/Prod_Turist/)`|New repository in your account|
 |**GitHub Organization**|`[https://Prod-Turist.github.io/](https://Prod-Turist.github.io/)`|Create a GitHub Organization|
 |**Custom Domain**|`[https://prodturist.com](https://prodturist.com)`|Purchased domain + DNS config|
+``` 
