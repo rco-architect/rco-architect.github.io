@@ -1,6 +1,6 @@
 
 
-
+``` Tree
 RCO-ARCHITECT.GITHUB.IO
 ├── index.html
 ├── docs-md/
@@ -38,3 +38,11 @@ rco-architect.github.io/
         ├── about.html
         ├── roadmap.html
         └── projects.html
+```
+
+---
+
+### Why Code Blocks Fix It
+
+1. **`white-space: pre`:** Code blocks force browsers to preserve every exact space, tab, and line break.
+2. **Monospace Font:** Characters line up perfectly in fixed-width columns so ASCII branch characters (`├──`, `└──`, `│`) align vertically instead of wrapping.
